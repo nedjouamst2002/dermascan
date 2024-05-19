@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".SettingsFragment">
+
+    <!-- FrameLayout for hosting fragments -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Your existing views for SettingsFragment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Your existing views for SettingsFragment -->
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_circle">
+
+            <TextView
+                style="@style/TEXT"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/abeezee_italic"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="NIGHT MODE"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switcher"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+
+        <!-- Button for "About the app" -->
+        <Button
+            android:id="@+id/about_app_button"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_circle"
+            android:fontFamily="@font/abeezee_italic"
+            android:textStyle="bold"
+            android:onClick="showOptions"
+            android:padding="10dp"
+            android:text="About the app"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Options for "About the app" -->
+        <LinearLayout
+            android:id="@+id/options_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+
+            <!-- First option -->
+            <TextView
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                style="@style/TEXT"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:onClick="selectOption" />
+
+            <!-- Second option -->
+            <TextView
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="العربية"
+                style="@style/TEXT"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:onClick="selectOption" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

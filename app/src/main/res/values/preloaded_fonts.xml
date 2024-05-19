@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abeezee_italic</item>
+        <item>@font/acme</item>
+        <item>@font/akaya_telivigala</item>
+        <item>@font/aladin</item>
+        <item>@font/allan</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/belleza</item>
+        <item>@font/caveat</item>
+        <item>@font/coustard</item>
+        <item>@font/eczar</item>
+        <item>@font/fresca</item>
+        <item>@font/gabriela</item>
+        <item>@font/gochi_hand</item>
+        <item>@font/itim</item>
+        <item>@font/kite_one</item>
+        <item>@font/kotta_one</item>
+        <item>@font/kreon</item>
+        <item>@font/love_ya_like_a_sister</item>
+        <item>@font/miniver</item>
+        <item>@font/sansita_swashed_semibold</item>
+        <item>@font/simonetta_italic</item>
+        <item>@font/sniglet</item>
+        <item>@font/stylish</item>
+        <item>@font/tinos</item>
+    </array>
+</resources>
