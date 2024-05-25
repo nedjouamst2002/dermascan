@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,7 +21,7 @@
         <!-- Your existing views for SettingsFragment -->
         <LinearLayout
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_width="400dp"
             android:layout_height="60dp"
             android:background="@drawable/round_circle">
@@ -53,7 +52,7 @@
             android:id="@+id/about_app_button"
             android:layout_width="400dp"
             android:layout_height="60dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/round_circle"
             android:fontFamily="@font/abeezee_italic"
